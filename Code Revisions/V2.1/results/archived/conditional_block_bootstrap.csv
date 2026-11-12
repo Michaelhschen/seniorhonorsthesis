@@ -1,0 +1,7 @@
+mapping,block_months,mean_advantage,lower95,upper95,scope
+legacy_heuristic,6,1.1513799593052392,0.8299338401298162,1.4479831592174315,conditional on fitted paths and mapping; no refitting uncertainty
+legacy_heuristic,12,1.1513799593052392,0.7316525072798348,1.5314523034308942,conditional on fitted paths and mapping; no refitting uncertainty
+legacy_heuristic,24,1.1513799593052392,0.6207710373268389,1.653126545855597,conditional on fitted paths and mapping; no refitting uncertainty
+economic_profile_descriptive,6,0.3938806608515427,0.12217567620213286,0.6890054720643007,conditional on fitted paths and mapping; no refitting uncertainty
+economic_profile_descriptive,12,0.3938806608515427,0.10752175599428551,0.7321091016600131,conditional on fitted paths and mapping; no refitting uncertainty
+economic_profile_descriptive,24,0.3938806608515427,0.05638459028939334,0.7766586949278389,conditional on fitted paths and mapping; no refitting uncertainty

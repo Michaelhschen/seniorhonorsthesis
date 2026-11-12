@@ -1,0 +1,65 @@
+V2.1 FINAL VERIFICATION
+11 November 2026
+
+DELIVERABLE
+Final circulation working paper, V2.1, 34 pages. The source and PDF are a separate
+revision from V2.0; earlier drafts are preserved. The author requested a package
+for manual GitHub upload. No GitHub commit or upload is claimed.
+
+EMPIRICAL CHECKS
+- Sixty newly executed HMM fits: 2/3/4/5 states, three panels, seeds 0-4,
+  unchanged five-PC observations, 137 months (May 2014-September 2025).
+- Four-state fitted-probability parity with the archive: maximum 1.14e-13.
+- Independent Gaussian forward/backward and comparison reconciliation:
+  892 numerical checks, maximum discrepancy 2.624e-10; all passed.
+- Established specification outputs independently reconciled: 48 probability
+  paths, 33 summary rows, 66 metric rows, 16 mappings, six recession rows,
+  six bootstrap rows, and 120 fit candidates; maximum error 5.685e-14.
+- Archived holdout provenance/probability/score audit: 1,368 checks passed.
+  Its code fixture is checked against its historical hash; it is deliberately
+  distinct from V2.1 production code. The holdout was not newly refitted.
+
+CODE CHECKS
+- Complete combined pytest run: 102 passed, one explicitly skipped historical
+  raw-provider integration check, 20 subtests passed. See audit/v21_pytest.log.
+- The one warning comes from characterizing the original yearless-date parser;
+  the corrected leap-day parser has separate passing tests.
+- Six new V2.1 unittest methods cover generic labels, mapping/probability defects,
+  metadata preservation, exact zero transitions, holdout forward recursion,
+  and invalid observation arrays. An additional 29 independent evaluator/filter
+  unittest checks passed. These overlap some pytest cases; counts are not summed.
+- Prepared public package independently tested without the workbook: 84 passed,
+  one skipped, 20 subtests passed; see audit/public_release_pytest.log.
+- Historical characterization tests explicitly isolate original fixture imports
+  from current production modules when collected in one pytest process.
+- All current production/analysis/test Python sources compile successfully.
+- Native hmmlearn execution succeeded in the actual Python 3.14.6 environment.
+  Actual versions are recorded in requirements-v21-runtime.txt and the new-run
+  manifest; requirements-lock.txt remains the historical environment record.
+
+PAPER CHECKS
+- pdfLaTeX/Biber plus repeated final LaTeX passes completed successfully.
+- 34 pages, no blank pages; all 26 bibliography entries cited; references and
+  labels resolved; no LaTeX/Biber or overfull/underfull box warnings.
+- Extracted text bounds remain inside every page. All PDF fonts are embedded.
+- All pages rendered and inspected on contact sheets. Title, main comparisons,
+  state-count table, initialization table, PCA loading figure, and final
+  replication page also inspected individually. No observed layout defects.
+- Broad-dollar figure label corrected; no table of contents; compact working-paper
+  opening, five keywords, JEL codes, and consistent author-date citations.
+
+ECONOMIC INTERPRETATION
+The 80.66% separate-pipeline and 13.89% common-classifier results are different
+conditional comparisons. The profile-matched contrast reverses with two or three
+states. BIC does not select four states for all panels. Near-selected nowcast fits
+retain the sign but change the magnitude. The declared recession diagnostic still
+misses both recession months. None of these checks establishes historical
+real-time classification, a stable economic taxonomy, or portfolio performance.
+
+PUBLIC CODE HANDOFF
+The upload archive adds Code Revisions/V2.1 and an overview README to the existing
+repository. It excludes manuscripts, input workbooks, raw provider caches,
+observation panels, environments, and credentials. Exact data requirements are
+documented; aggregate results are not a substitute for the historical inputs.
+The release manifest hashes each published file. See GITHUB_UPLOAD_INSTRUCTIONS.txt
+and PUBLICATION_STATUS.txt. Remote publication is the author's next step.

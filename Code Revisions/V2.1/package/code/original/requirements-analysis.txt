@@ -1,0 +1,5 @@
+fredapi
+statsmodels
+scikit-learn
+hmmlearn
+matplotlib

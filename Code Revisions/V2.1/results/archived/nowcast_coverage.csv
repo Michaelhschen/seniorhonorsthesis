@@ -1,0 +1,7 @@
+sample,variable,months,replacements,fallback,mean_issue_age_days,max_issue_age_days
+Input,GDP_QoQAnn,141,131,10,1.8549618320610688,10
+Input,CPI_YoY,141,141,0,0.475177304964539,3
+Input,CorePCE_YoY,141,141,0,0.475177304964539,3
+Estimation,GDP_QoQAnn,137,128,9,1.8671875,10
+Estimation,CPI_YoY,137,137,0,0.48905109489051096,3
+Estimation,CorePCE_YoY,137,137,0,0.48905109489051096,3
