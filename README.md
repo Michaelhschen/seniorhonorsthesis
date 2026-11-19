@@ -1,7 +1,9 @@
 ﻿# Senior Honours Thesis Code
 
-Code for Michael H. Chen's *Public Nowcasts and Macroeconomic Regime
-Classification: A Retrospective Assessment* (working paper V2.1, 11 November 2026).
+Code for Michael H. Chen's *Real-Time Macroeconomic Regime Detection:
+Assessing the Role of GDP and Inflation Nowcasting* (working paper V2.1, 11 November 2026).
+
+**Paper has now been updated to V2.2; no material code has changed for data, only analysis."
 
 The revised source, configuration, tests, and aggregate diagnostic results are in
 [`Code Revisions/V2.1/`](Code%20Revisions/V2.1/README.md).
